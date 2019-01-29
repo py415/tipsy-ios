@@ -21,6 +21,15 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
     } // end viewDidLoad function
+    
+    override func viewWillAppear(_ animated: Bool) {
+        
+        let defaults = UserDefaults.standard
+        let percentSetting = defaults.integer(forKey: "tipPercent")
+        
+        tipControl.selectedSegmentIndex = percentSetting
+        
+    } // viewWillAppear function
 
     @IBAction func onEdit(_ sender: Any) {
         

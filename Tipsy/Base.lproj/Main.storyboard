@@ -148,14 +148,33 @@
                     <view key="view" contentMode="scaleToFill" id="B6V-7L-bB4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="8Ie-AP-ydM">
+                                <rect key="frame" x="0.0" y="88" width="375" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="10%"/>
+                                    <segment title="15%"/>
+                                    <segment title="20%"/>
+                                </segments>
+                                <connections>
+                                    <action selector="defaultTip:" destination="VpL-s6-WpD" eventType="valueChanged" id="biX-KI-CpM"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="4TO-NK-3oW"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Settings" id="aoL-XC-PTc"/>
+                    <navigationItem key="navigationItem" title="Settings" leftItemsSupplementBackButton="YES" id="aoL-XC-PTc">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="sQQ-Z2-D2F"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="defaultTipControl" destination="8Ie-AP-ydM" id="ryL-cK-M6m"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nIh-wv-yYE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1885" y="129"/>
+            <point key="canvasLocation" x="1884" y="128.57142857142858"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="igM-nu-tDi">
