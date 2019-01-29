@@ -88,7 +88,13 @@
                             <outletCollection property="gestureRecognizers" destination="3OU-KC-sui" appends="YES" id="vox-aU-qxc"/>
                         </connections>
                     </view>
-                    <navigationItem key="navigationItem" title="Tipsy" id="4XA-tb-Sci"/>
+                    <navigationItem key="navigationItem" title="Tipsy" id="4XA-tb-Sci">
+                        <barButtonItem key="rightBarButtonItem" title="Settings" id="Xdh-nX-s2S">
+                            <connections>
+                                <segue destination="VpL-s6-WpD" kind="push" id="XJy-fh-KTO"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="billField" destination="jHD-mK-QUM" id="680-aH-033"/>
                         <outlet property="tipControl" destination="1IS-G1-e3h" id="fvq-H4-0SN"/>
@@ -104,6 +110,22 @@
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1079.2" y="133.74384236453201"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="cRh-d3-bw3">
+            <objects>
+                <viewController id="VpL-s6-WpD" customClass="SettingsViewController" customModule="Tipsy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="B6V-7L-bB4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="4TO-NK-3oW"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Settings" id="aoL-XC-PTc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nIh-wv-yYE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1885" y="129"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="igM-nu-tDi">
