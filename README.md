@@ -22,7 +22,7 @@ Tipsy is a beautiful bill splitting, tip calculating app. No one can work out $1
 
 Here's a GIF of how the app works:
 
-<img src="ADD_GIF_LINK" width=250><br>
+<img src="https://i.imgur.com/d7k3Ano.gif" width=250><br>
 
 ## Credits
 
