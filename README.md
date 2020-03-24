@@ -1,54 +1,33 @@
 # Tipsy
-Tip Calculator for iOS
-# Pre-work - *Tipsy*
 
-**Tipsy** is a tip calculator application for iOS.
+## Table of Contents
+1. [Overview](#Overview)
+2. [Product Spec](#Product-Spec)
+3. [App Walkthrough](#App-Walkthrough)
+4. [Open-Source libraries used](#Open-Source-libraries-used)
+5. [Credits](#Credits)
 
-Submitted by: **Philip Yu**
+## Overview
+### Description
 
-Time spent: **3** hours spent in total
+Tipsy is a beautiful bill splitting, tip calculating app. No one can work out $145.56 split between 5 people with a 20 percent tip. With your very own Tipsy app in hand, you’ll never need to do maths ever again!
 
-## User Stories
+## Product Spec
+### User Stories
 
-The following **required** functionality is complete:
+- [ ] User shall be able to calculate how much tip they should be tipping.
+- [ ] User shall be able to split a bill between multiple people.
 
-* [x] User can enter a bill amount, choose a tip percentage, and see the tip and total values.
+## App Walkthrough
 
-The following **optional** features are implemented:
-* [x] Settings page to change the default tip percentage.
-* [ ] UI animations
-* [x] Remembering the bill amount across app restarts (if <10mins)
-* [ ] Using locale-specific currency and currency thousands separators.
-* [ ] Making sure the keyboard is always visible and the bill amount is always the first responder. This way the user doesn't have to tap anywhere to use this app. Just launch the app and start typing.
+Here's a GIF of how the app works:
 
-The following **additional** features are implemented:
+<img src="ADD_GIF_LINK" width=250><br>
 
-- [ ] List anything else that you can get done to improve the app functionality!
+## Open-source libraries used
 
-## Video Walkthrough 
+- [LIBRARY NAME](ADD_SOURCE_LINK_HERE) - Add a description here.
 
-Here's a walkthrough of implemented user stories:
+## Credits
 
-<img src='http://g.recordit.co/K0LUwD6kZ4.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-
-GIF created with [Recordit](http://recordit.co/).
-
-## Notes
-
-Describe any challenges encountered while building the app.
-
-## License
-
-    Copyright 2019 Philip Yu
-
-    Licensed under the Apache License, Version 2.0 (the "License");
-    you may not use this file except in compliance with the License.
-    You may obtain a copy of the License at
-
-        http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing, software
-    distributed under the License is distributed on an "AS IS" BASIS,
-    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-    See the License for the specific language governing permissions and
-    limitations under the License.
+>This is a companion project to The App Brewery's Complete App Developement Bootcamp, check out the full course at [www.appbrewery.co](https://www.appbrewery.co/)
