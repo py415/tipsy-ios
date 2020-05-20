@@ -10,11 +10,11 @@ import UIKit
 
 class ResultsViewController: UIViewController {
     
-    // Outlets
+    // MARK: - Outlets
     @IBOutlet weak var totalLabel: UILabel!
     @IBOutlet weak var settingsLabel: UILabel!
     
-    //Properties
+    // MARK: - Properties
     var result: String = "0.0"
     var tip: Int = 10
     var split: Int = 2
@@ -27,6 +27,8 @@ class ResultsViewController: UIViewController {
         settingsLabel.text = "Split between \(split) people, with \(tip)% tip."
         
     }
+    
+    // MARK: - IBAction Section
 
     @IBAction func recalculatePressed(_ sender: UIButton) {
         

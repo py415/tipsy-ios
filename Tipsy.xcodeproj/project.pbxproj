@@ -15,23 +15,6 @@
 		72DC15BC21FFAC5800F28414 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72DC15BA21FFAC5800F28414 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		72DC15C321FFAC5800F28414 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 72DC15A621FFAC5600F28414 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 72DC15AD21FFAC5600F28414;
-			remoteInfo = Tipsy;
-		};
-		72DC15CE21FFAC5800F28414 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 72DC15A621FFAC5600F28414 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 72DC15AD21FFAC5600F28414;
-			remoteInfo = Tipsy;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		727207FC2429B55F00CC541D /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		72BCAA272429B0AE000BB0F2 /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
@@ -41,26 +24,10 @@
 		72DC15B821FFAC5800F28414 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		72DC15BB21FFAC5800F28414 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		72DC15BD21FFAC5800F28414 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		72DC15C221FFAC5800F28414 /* TipsyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TipsyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		72DC15CD21FFAC5800F28414 /* TipsyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TipsyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		72DC15AB21FFAC5600F28414 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		72DC15BF21FFAC5800F28414 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		72DC15CA21FFAC5800F28414 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -110,8 +77,6 @@
 			isa = PBXGroup;
 			children = (
 				72DC15AE21FFAC5600F28414 /* Tipsy.app */,
-				72DC15C221FFAC5800F28414 /* TipsyTests.xctest */,
-				72DC15CD21FFAC5800F28414 /* TipsyUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -147,42 +112,6 @@
 			productReference = 72DC15AE21FFAC5600F28414 /* Tipsy.app */;
 			productType = "com.apple.product-type.application";
 		};
-		72DC15C121FFAC5800F28414 /* TipsyTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 72DC15D921FFAC5800F28414 /* Build configuration list for PBXNativeTarget "TipsyTests" */;
-			buildPhases = (
-				72DC15BE21FFAC5800F28414 /* Sources */,
-				72DC15BF21FFAC5800F28414 /* Frameworks */,
-				72DC15C021FFAC5800F28414 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				72DC15C421FFAC5800F28414 /* PBXTargetDependency */,
-			);
-			name = TipsyTests;
-			productName = TipsyTests;
-			productReference = 72DC15C221FFAC5800F28414 /* TipsyTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		72DC15CC21FFAC5800F28414 /* TipsyUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 72DC15DC21FFAC5800F28414 /* Build configuration list for PBXNativeTarget "TipsyUITests" */;
-			buildPhases = (
-				72DC15C921FFAC5800F28414 /* Sources */,
-				72DC15CA21FFAC5800F28414 /* Frameworks */,
-				72DC15CB21FFAC5800F28414 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				72DC15CF21FFAC5800F28414 /* PBXTargetDependency */,
-			);
-			name = TipsyUITests;
-			productName = TipsyUITests;
-			productReference = 72DC15CD21FFAC5800F28414 /* TipsyUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -195,14 +124,6 @@
 				TargetAttributes = {
 					72DC15AD21FFAC5600F28414 = {
 						CreatedOnToolsVersion = 10.1;
-					};
-					72DC15C121FFAC5800F28414 = {
-						CreatedOnToolsVersion = 10.1;
-						TestTargetID = 72DC15AD21FFAC5600F28414;
-					};
-					72DC15CC21FFAC5800F28414 = {
-						CreatedOnToolsVersion = 10.1;
-						TestTargetID = 72DC15AD21FFAC5600F28414;
 					};
 				};
 			};
@@ -220,8 +141,6 @@
 			projectRoot = "";
 			targets = (
 				72DC15AD21FFAC5600F28414 /* Tipsy */,
-				72DC15C121FFAC5800F28414 /* TipsyTests */,
-				72DC15CC21FFAC5800F28414 /* TipsyUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -234,20 +153,6 @@
 				72DC15BC21FFAC5800F28414 /* LaunchScreen.storyboard in Resources */,
 				72DC15B921FFAC5800F28414 /* Assets.xcassets in Resources */,
 				72DC15B721FFAC5600F28414 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		72DC15C021FFAC5800F28414 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		72DC15CB21FFAC5800F28414 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,34 +190,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		72DC15BE21FFAC5800F28414 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		72DC15C921FFAC5800F28414 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		72DC15C421FFAC5800F28414 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 72DC15AD21FFAC5600F28414 /* Tipsy */;
-			targetProxy = 72DC15C321FFAC5800F28414 /* PBXContainerItemProxy */;
-		};
-		72DC15CF21FFAC5800F28414 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 72DC15AD21FFAC5600F28414 /* Tipsy */;
-			targetProxy = 72DC15CE21FFAC5800F28414 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		72DC15B521FFAC5600F28414 /* Main.storyboard */ = {
@@ -488,84 +366,6 @@
 			};
 			name = Release;
 		};
-		72DC15DA21FFAC5800F28414 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = TipsyTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Philip-Yu.TipsyTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tipsy.app/Tipsy";
-			};
-			name = Debug;
-		};
-		72DC15DB21FFAC5800F28414 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = TipsyTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Philip-Yu.TipsyTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tipsy.app/Tipsy";
-			};
-			name = Release;
-		};
-		72DC15DD21FFAC5800F28414 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = TipsyUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Philip-Yu.TipsyUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Tipsy;
-			};
-			name = Debug;
-		};
-		72DC15DE21FFAC5800F28414 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = TipsyUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Philip-Yu.TipsyUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Tipsy;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -583,24 +383,6 @@
 			buildConfigurations = (
 				72DC15D721FFAC5800F28414 /* Debug */,
 				72DC15D821FFAC5800F28414 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		72DC15D921FFAC5800F28414 /* Build configuration list for PBXNativeTarget "TipsyTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				72DC15DA21FFAC5800F28414 /* Debug */,
-				72DC15DB21FFAC5800F28414 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		72DC15DC21FFAC5800F28414 /* Build configuration list for PBXNativeTarget "TipsyUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				72DC15DD21FFAC5800F28414 /* Debug */,
-				72DC15DE21FFAC5800F28414 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -10,18 +10,39 @@ import UIKit
 
 class CalculatorViewController: UIViewController {
 
-    // Outlets
+    // MARK: - Outlets
     @IBOutlet weak var billTextField: UITextField!
     @IBOutlet weak var zeroPctButton: UIButton!
     @IBOutlet weak var tenPctButton: UIButton!
     @IBOutlet weak var twentyPctButton: UIButton!
     @IBOutlet weak var splitNumberLabel: UILabel!
     
-    // Properties
-    var tipPercentage: Double = 0.10
-    var people: Int = 2
-    var billTotal: Double = 0.0
-    var finalResult: String = "0.0"
+    // MARK: - Properties
+    private var tipPercentage: Double = 0.10
+    private var people: Int = 2
+    private var billTotal: Double = 0.0
+    private var finalResult: String = "0.0"
+    
+    // Tap anywhere to dismiss number pad
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+     
+        self.view.endEditing(true)
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "goToResults" {
+            let destinationVC = segue.destination as! ResultsViewController
+            
+            destinationVC.result = finalResult
+            destinationVC.tip = Int(tipPercentage * 100)
+            destinationVC.split = people
+        }
+        
+    }
+    
+    // MARK: - IBAction Section
     
     @IBAction func tipChanged(_ sender: UIButton) {
         
@@ -60,25 +81,6 @@ class CalculatorViewController: UIViewController {
         
         self.performSegue(withIdentifier: "goToResults", sender: self)
     
-    }
-    
-    // Tap anywhere to dismiss number pad
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-     
-        self.view.endEditing(true)
-        
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        if segue.identifier == "goToResults" {
-            let destinationVC = segue.destination as! ResultsViewController
-            
-            destinationVC.result = finalResult
-            destinationVC.tip = Int(tipPercentage * 100)
-            destinationVC.split = people
-        }
-        
     }
     
 }
